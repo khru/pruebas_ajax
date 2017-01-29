@@ -1,0 +1,21 @@
+
+function descargarArchivo(){
+	// Obtenemos la instancia del objeto XMLHttoRequest (Depende del navegador)
+	if (window.XMLHttpRequest) {
+		peticion_http = new XMLHttpRequest();
+	} else if (window.ActiveXobject) {
+		// Windows antiguos
+		peticion_http = new ActiveXobject('Microsoft.XMLHTTP');
+	}
+	// Preparamos la función de respuesta
+	peticion_http.onreadystatechange = muestraContenido;
+	// Realizamos la petición HTTP
+	peticion_http.open('GET', 'http://www.aimint.com/robots.txt');
+	function muestraContenido(){
+		if (peticion_http.readyState == 4) {
+			if (peticion_http.status) {
+				alert(peticion_http.responseText);
+			}
+		}
+	}
+}

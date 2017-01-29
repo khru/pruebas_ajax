@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 2</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript" src="js/codigo2.js"></script>
+	<link rel="stylesheet" href="recurso/css/estilo.css">
+	<link rel="stylesheet" type="text/css" media="all" href="./js/calendar-win2k-cold-1.css" />
+	<script type="text/javascript" src="./js/calendar.js"></script>
+	<script type="text/javascript" src="./js/calendar-es.js"></script>
+	<script type="text/javascript" src="./js/calendar-setup.js"></script>
+</head>
+<body>
+	<form action="#" name="" id="formulario" method="" enctype="multipart/form-data">
+		<p class="error oculto" id="error_formulario"></p>
+		<p>
+			<label for="departamento">Departamento:</label>
+			<select name="departamento" id="departamento" autofocus>
+				<option value="servicio">Servicio Técnico</option>
+				<option value="ventas">Departamento de ventas</option>
+			</select>
+		</p>
+		<p>
+		<label for="nombre">Nombre(*):</label>
+			<!-- Campo texto -->
+			<input type="text" name="nombre" id="nombre" size="50" placeholder="Emmanuel Valverde Ramos" maxlength="100" required autofocus pattern="[a-zA-ZÑñáéíóúàèìòùÀÈÌÒÙÁÉÍÓÚ ]{3,}">
+		</p>
+		<p class="error oculto" id="error_nombre"></p>
+		<p>
+			<label for="domicilio">Domicilio:</label>
+			<input type="text" name="domicilio" size="50" id="domicilio" value="" placeholder="Calle mayor"  autofocus>
+		</p>
+		<p class="error oculto" id="error_domicilio"></p>
+		<p>
+			<label for="ciudad">Ciudad</label>
+			<input type="text" name="ciudad" id="ciudad" value="" placeholder="Murcia" >
+		</p>
+		<p class="error oculto" id="error_ciudad"></p>
+		<p>
+			<label for="postal">Cod. Postal(*):</label>
+			<input type="text" name="postal" id="postal" size="5" maxlength="5" value="" placeholder="03180" required autofocus>
+		</p>
+		<p class="error oculto" id="error_postal"></p>
+		<p>
+			<label for="provincia">Provincia</label>
+			<input type="text" name="provincia" id="provincia" value="" placeholder="Murcia">
+		</p>
+		<p class="error oculto" id="error_provincia"></p>
+		<p>
+			<label for="telefono">Teléfono(*): </label>
+			<input type="text" name="telefono" value="" id="telefono" placeholder="655417682" required autofocus>
+		</p>
+		<p class="error oculto" id="error_telefono"></p>
+		<p>
+			<label for="email">Email(*):</label>
+			<input type="email" name="email" size="50" id="email" value="" placeholder="evrtrabajo@gmail.com">
+		</p>
+		<p class="error oculto" id="error_email"></p>
+		<p>
+			<label for="nacimiento">Nacimiento:</label>
+			<input type="text" name="nacimiento" id="nacimiento" value="" readonly="" placeholder="dd/mm/yyyy" autofocus>
+	            	<script>
+						Calendar.setup({
+						  	inputField: "nacimiento",
+						  	ifFormat:   "%d/%m/%Y",
+						  	weekNumbers: false,
+						  	displayArea: "nacimiento",
+						  	daFormat:    "%A, %d de %B de %Y"
+						});
+					</script>
+	            </p>
+		</p>
+		<p class="error oculto" id="error_nacimiento"></p>
+		<p>
+			<label for="sexo">Sexo:</label>
+			<select name="sexo" id="sexo">
+				<option value="hombre">Hombre</option>
+				<option value="mujer">Mujer</option>
+			</select>
+		</p>
+		<p>
+			<label for="comentario">Comentario(*);</label>
+		</p>
+		<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+		<p class="error oculto" id="error_comentario"></p>
+		<p>
+			<input type="submit" name="" value="Enviar">
+		</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+COSAS A AÑADIR EN LA APLICACIÓN:
+	- BUSCADOR
+	- Crear  tabla con estados de las ofertas:
+		- Curriculum sin ver
+		- Curriculum visto
+		- Pasa a la siguiente fase
+		- Entrevista
+		- Rechazado
+	- Crear una página personal para el usuario el cual pueda:
+		- Subir una foto
+		- Modificar su perfil
+		- Visualizar su información personal
+	- Crear una página para visualizar la información de una empresa, desde las ofertas
+	- Permitir listar las ofertas de una empresa, directamente desde la página de empresas

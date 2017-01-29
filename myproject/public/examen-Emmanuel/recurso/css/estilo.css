@@ -1,0 +1,105 @@
+/**
+ * Estilos modificados para que sean responsive
+ * y que cumplan su cometido
+ */
+body {
+    font-family: arial, helvetica;
+    background-color:#BBDEFB;
+    padding: 0px;
+}
+    form {
+        width: 50%;
+        margin: 20px auto 0 auto;
+        background-color:#64B5F6;
+        padding:5px;
+        border:black 2px solid;
+    }
+
+    label {
+        width: 100%;
+        font-weight: bold;
+        display:block;
+    }
+    label[for="registro_condiciones"] {
+        display:inline-block;
+        width:90%;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        border:2px black solid;
+        width: 98%;
+        padding:3px;
+    }
+
+    input[type="submit"] {
+        display: block;
+        width:100%;
+        padding:5px;
+        background-color: rgba(244, 67, 54, 0.30);
+        border: 5px rgba(211, 47, 47, 0.69) solid;
+        border-radius: 5px;
+        font-size: 1.5em;
+        color: rgba(236, 239, 241, 1);
+    }
+
+    input[type="submit"]:hover {
+        background-color: #F44336;
+        border-color: #D32F2F;
+        transition: 0.6s;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    p.error{
+        color:#F44336;
+        background-color: #FFCDD2;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+    }
+
+    input.error{
+        border:2px #F44336 solid;
+    }
+    div.error{
+        width: 90%;
+        margin:0 auto;
+    }
+
+    .oculto {
+        display: none;
+    }
+    input.valido{
+        border: 2px #76FF03 solid !important;
+        background-color: #CCFF90;
+    }
+
+    input:focus {
+        padding: 6px;
+        transition-duration: 0.4s;
+    }
+
+    textarea:focus{
+        padding: 6px;
+        transition-duration: 0.4s
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    @media screen and (max-width: 960px){
+        form {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        form {
+            width: 100%;
+            overflow: auto;
+            padding:2px;
+            margin:0 auto;
+        }
+    }
